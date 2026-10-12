@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  circle-calculator:
+    image: carantoin/circle-calculator:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: circle-calculator
+    stdin_open: true
+    tty: true
